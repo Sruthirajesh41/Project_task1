@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+        {% csrf_token %}
+        <label for="">Semester name</label>
+        <input type="text" name="txt_sem" value="{{data.semester_name}}">
+        <label for="">Exam mark</label>
+        <input type="text" name="txt_exam_mark" value="{{data.exam_mark}}">
+        <label for="">CE Mark</label>
+        <input type="text" name="txt_ce" value="{{data.ce_mark}}">
+        <button type="submit">Save</button>
+    </form>
+</body>
+</html>
