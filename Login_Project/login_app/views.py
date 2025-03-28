@@ -23,7 +23,7 @@ def user_registration(request):
         # data.set_password(password) 
         data.save()
         # return HttpResponse("Success")
-        return render(request,'registration.html',{'msg':'You are successfully registered'})
+        return render(request,'registration.html',{'msg':'You are successfuiuytrdelly registered'})
     else:
         return render(request,'registration.html')
 def home(request):
